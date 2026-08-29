@@ -708,7 +708,7 @@ body{
 <body>
 <div class="header">
 <h1>LIPZX STORE</h1>
-<h2>🔥 SPESIAL BERSIH-BERSIH GUDANG 🔥</h2>
+<h2>🔥 BERSIH-BERSIH GUDANG 🔥</h2>
 <div class="sub">PENYETOKNYA ID CANTIK</div>
 </div>
 <div class="tabs">
@@ -1495,7 +1495,7 @@ body{
       <img src="qr.png" alt="QRIS Pembayaran"/>
     </div>
 
-    <p class="scan-text">📱 Scan QR di atas, lalu <strong>kirim bukti pembayaran</strong> ke admin.</p>
+    <p class="scan-text">📱 Scan QR di atas, masukkan nominal pembayaran sesuai harga id yang di pilih, lalu <strong>kirim bukti pembayaran</strong> ke admin.</p>
 
     <div class="payment-actions">
       <a class="btn konfirmasi" id="wa">💬 Konfirmasi ke Admin</a>
@@ -1527,7 +1527,7 @@ function beli(id, harga){
     "Rp" + Number(harga).toLocaleString("id-ID");
 
   document.getElementById("wa").href =
-    "https://wa.me/6283822416101?text=Saya sudah bayar ID " + id + " Rp" + harga + ", ini bukti transfer";
+    "https://wa.me/6283822416101?text=Saya sudah bayar ID " + id + " Rp" + harga + ", dan ini bukti transfer";
 
   document.body.style.overflow = "hidden";
 }
