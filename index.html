@@ -533,28 +533,56 @@ body{
 .rare::before{background:linear-gradient(90deg,#0ea5e9,#67e8f9);}
 .epic::before{background:linear-gradient(90deg,#9333ea,#d8b4fe);}
 
-/* RARITY */
+/* RARITY + DISCOUNT LABEL */
 .label{
-  margin:2px 0 7px;
-  font-size:9px;
+  display:block;
+  width:calc(100% - 76px);
+  min-height:20px;
+  box-sizing:border-box;
+  margin:1px 0 7px;
+  padding:4px 6px;
+  border-radius:7px;
+  text-align:left;
+  font-size:8px;
+  line-height:12px;
   font-weight:900;
-  letter-spacing:1.5px;
+  letter-spacing:1.2px;
   color:#94a3b8;
+  background:rgba(148,163,184,.07);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
 
-.basic .label{color:#4ade80;}
-.rare .label{color:#67e8f9;}
-.epic .label{color:#c084fc;}
+.basic .label{
+  color:#4ade80;
+  background:rgba(34,197,94,.08);
+}
+
+.rare .label{
+  color:#67e8f9;
+  background:rgba(56,189,248,.08);
+}
+
+.epic .label{
+  color:#c084fc;
+  background:rgba(168,85,247,.08);
+}
 
 /* DISCOUNT */
 .discount-badge{
   top:8px;
   right:7px;
-  padding:5px 7px;
+  min-width:63px;
+  box-sizing:border-box;
+  padding:5px 6px;
   border-radius:8px;
-  font-size:9px;
+  font-size:8px;
+  line-height:12px;
   font-weight:900;
-  letter-spacing:.2px;
+  letter-spacing:.1px;
+  text-align:center;
+  white-space:nowrap;
   box-shadow:0 5px 12px rgba(239,68,68,.18);
 }
 
