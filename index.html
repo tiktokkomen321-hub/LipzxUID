@@ -1175,9 +1175,12 @@ function tutup(){
   document.body.style.overflow = "";
 }
 
-function tutup(){
-  document.getElementById("pay").classList.remove("active");
-}
+window.addEventListener("popstate", function(){
+  const pay = document.getElementById("pay");
+  if (pay && pay.classList.contains("active")) {
+    tutup();
+  }
+});
 </script>
 </body>
 </html>
